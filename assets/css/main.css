@@ -1630,6 +1630,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			height: 16.43em;
 		}
 
 		.image.fit {
