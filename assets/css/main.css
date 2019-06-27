@@ -10,7 +10,7 @@
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, , ins, kbd, q, s, samp,
+code, del, dfn, em, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #f4f4f4;
+		color: #0e1e24;
 		font-weight: 300;
 		font-size: 13pt;
 	}
@@ -1687,8 +1687,10 @@ input, select, textarea {
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #DAE0F2;
-		padding: 1em 2.35em 1em 2.35em;
+		/* background-color: #DAE0F2; */
+		background-color: #2b3542;
+		/* padding: 1em 2.35em 1em 2.35em; */
+		padding: .5em 1.5em .5em 1.5em;
 		font-size: 1.1em;
 		max-width: 24em;
 	}
@@ -1938,6 +1940,8 @@ input, select, textarea {
 			top: 2em;
 			margin: -4em 0 4em -4em;
 			width: auto;
+			overflow: hidden;
+
 		}
 
 /* Icons */
@@ -1990,7 +1994,7 @@ input, select, textarea {
 /* Wrappers */
 
 	.wrapper {
-		background-image: url("images/bg.png");
+		/* background-image: url("images/bg.png");	 */
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		padding: 8em 0 8em 0;
 		text-align: center;
@@ -2047,10 +2051,22 @@ input, select, textarea {
 		width: 100%;
 		z-index: 10000;
 		cursor: default;
-		height: 3.5em;
+		height: 4.5em;
 		line-height: 3.5em;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	
 	}
-
+		#nav h1{
+			font-size: 1.25em;
+			letter-spacing: -0.025em;
+			font-weight: bolder;
+			line-height: 1.2em;
+			color: #f4f4f4;
+			padding-left: 40px;
+		}
 		#nav ul {
 			margin-bottom: 0;
 			list-style: none;
@@ -2461,7 +2477,7 @@ input, select, textarea {
 
 	}
 	.photo-overlay{
-		background: rgba(0,0,0,	 .65);
+		background: rgba(0,0,0, .65);
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -2503,4 +2519,6 @@ input, select, textarea {
 
 	.photo:hover img{
 		transform: scale(1.1);
+		height: 16.43em;
+
 	}
