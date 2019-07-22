@@ -1917,13 +1917,16 @@ input, select, textarea {
 
 	.box {
 		background: #fff;
-		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+		/* box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1); */
 		text-align: center;
 		padding: 2em;
 	}
 
 		.box.style1 {
 			padding: 3em 2em 3.5em 2em;
+			height: 45px;
+			display: flex;
+			align-items: center;
 		}
 
 			.box.style1 h3 {
@@ -1943,7 +1946,7 @@ input, select, textarea {
 			overflow: hidden;
 
 		}
-
+	
 /* Icons */
 
 	.icon {
@@ -1983,12 +1986,16 @@ input, select, textarea {
 		.icon.featured {
 			color: #EA8A95;
 			display: block;
-			margin: 0 0 1.5em 0;
+			/* margin: 0 0 1.5em 0; */
 			cursor: default;
 		}
 
 			.icon.featured:before, .icon.featured .fab:before {
-				font-size: 6em;
+				font-size: 2em;
+			}
+			.box h4{
+				font-size: 1.2em;
+				padding: 0px 0px 0px 10px;
 			}
 
 /* Wrappers */
@@ -2006,7 +2013,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #fafafa;
+			/* background-color: #fafafa; */
 			text-shadow: 1px 1px 0px #fff;
 		}
 
@@ -2051,7 +2058,7 @@ input, select, textarea {
 		width: 100%;
 		z-index: 10000;
 		cursor: default;
-		height: 4.5em;
+		height: 5.5em;
 		line-height: 3.5em;
 		display: flex;
 		justify-content: center;
@@ -2066,6 +2073,10 @@ input, select, textarea {
 			line-height: 1.2em;
 			color: #f4f4f4;
 			padding-left: 40px;
+		}
+		nav img{
+			height: 100%;
+			margin-left: 5%;
 		}
 		#nav ul {
 			margin-bottom: 0;
